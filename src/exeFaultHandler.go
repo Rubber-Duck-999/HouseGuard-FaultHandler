@@ -3,6 +3,7 @@ package main
 import (
 	"os"
 
+	"github.com/Rubber-Duck-999/houseguard"
 	"github.com/akamensky/argparse"
 	log "github.com/sirupsen/logrus"
 )
@@ -23,9 +24,9 @@ func main() {
 	}
 
 	file := *f
-	var data ConfigTypes
-	if Exists(file) {
-		GetData(&data, file)
+	var data houseguard.FHConfigTypes
+	if houseguard.Exists(file) {
+		houseguard.GetData(&data, file)
 	} else {
 		log.Error("File doesn't exist")
 		os.Exit(2)

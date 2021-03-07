@@ -1,6 +1,6 @@
 package main
 
-type ConfigTypes struct {
+type FHConfigTypes struct {
 	EmailSettings struct {
 		Email    string `yaml:"email"`
 		Password string `yaml:"password"`

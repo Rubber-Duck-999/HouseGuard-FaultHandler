@@ -6,6 +6,7 @@ import (
 	"net/mail"
 	"net/smtp"
 
+	"github.com/Rubber-Duck-999/houseguard"
 	"github.com/scorredoira/email"
 	log "github.com/sirupsen/logrus"
 )
@@ -62,7 +63,7 @@ func sendLogsEmail() {
 	var files = [4]string{"logs/oldFH.txt",
 		"logs/NAC.txt", "logs/SYP.txt", "logs/UP.txt"}
 	for _, file := range files {
-		if Exists(file) {
+		if houseguard.Exists(file) {
 			if err := m.Attach(file); err != nil {
 				log.Error(err)
 			}

@@ -65,10 +65,12 @@ func messages(routing_key string, value string) {
 
 func SetConnection() error {
 	conn, init_err = amqp.Dial("amqp://guest:" + password + "@localhost:5672/")
-	failOnError(init_err, "Failed to connect to RabbitMQ")
+	log.Error("Failed to connect to RabbitMQ")
 
-	ch, init_err = conn.Channel()
-	failOnError(init_err, "Failed to open a channel")
+	if init_err == nil {
+		ch, init_err = conn.Channel()
+		log.Error("Failed to open a channel")
+	}
 	return init_err
 }
 
