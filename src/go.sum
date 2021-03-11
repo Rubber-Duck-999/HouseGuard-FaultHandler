@@ -10,6 +10,7 @@ github.com/clarketm/json v1.14.4 h1:sTp4wIrda8EchoRrtlNAHUMHpI7Q7Ggs2TQLEKXtwYY=
 github.com/clarketm/json v1.14.4/go.mod h1:ynr2LRfb0fQU34l07csRNBTcivjySLLiY1YzQqKVfdo=
 github.com/clarketm/json v1.15.0 h1:9UeeIZ9l54M/yAqEMB472YXLs0EJMrCMCtaiAWsl0xE=
 github.com/clarketm/json v1.15.0/go.mod h1:ynr2LRfb0fQU34l07csRNBTcivjySLLiY1YzQqKVfdo=
+github.com/clarketm/json v1.15.7/go.mod h1:ynr2LRfb0fQU34l07csRNBTcivjySLLiY1YzQqKVfdo=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/dgrijalva/jwt-go v3.2.0+incompatible h1:7qlOGliEKZXTDg6OTjfoBKDXWrumCAMpl/TFQ4/5kLM=
